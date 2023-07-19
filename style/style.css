@@ -91,7 +91,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 120px;
+    padding: 0px 120px;
 }
 
 .banner-image img {
@@ -121,7 +121,8 @@ h4 {
     font-weight: 500;
     text-transform: lowercase;
 }
-.btn-secondary{
+
+.btn-secondary {
     border-radius: 48px;
     background: #4EC5F7;
     color: white;
@@ -131,8 +132,51 @@ h4 {
     margin-left: 10px;
     cursor: pointer;
 }
-.banner-button{
+
+.banner-button {
     margin-top: 30px;
+}
+
+/* Gamer Container Styles */
+
+.gamer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF9FC;
+    padding: 40px 120px;
+}
+
+.gamer-image img {
+    max-width: 560px;
+}
+
+.gamer-content {
+    text-align: end;
+}
+
+.gamer-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gamer-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #534C64;
+}
+.gamer-quote {
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.quote-span {
+    color: #534C64;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 /* Responsive Media Query */
@@ -154,34 +198,63 @@ h4 {
     .follow-us-content a {
         padding-left: 5px;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
         padding: 10px 50px;
-        /* padding-bottom: 50px; */
         background-position: bottom center;
         background-size: 90%;
     }
+
     .banner-image img {
         max-width: 100%;
         margin-bottom: 20px;
     }
-    .banner-content{
+
+    .banner-content {
         padding: 20px 0px;
     }
-    .banner-content-subtitle{
+
+    .banner-content-subtitle {
         font-size: 1.5rem;
     }
-    .banner-content-title{
+
+    .banner-content-title {
         font-size: 2.9rem;
     }
-    .banner-container-description{
+
+    .banner-container-description {
         font-size: 0.7rem;
     }
-    .btn-primary, .btn-secondary{
+
+    .btn-primary,
+    .btn-secondary {
         padding: 10px 20px;
         font-size: 0.6rem;
     }
-    
+    .gamer-container{
+        flex-direction: column;
+        padding: 10px 40px;
+        background-color: white;
+    }
+    .gamer-image img {
+        width: 100%;
+    }
+    .gamer-content {
+        text-align: center;
+    }
+    .gamer-title{
+        font-size: 1.5rem;
+    }
+    .gamer-description{
+        font-size: 0.7rem;
+    }
+    .gamer-quote{
+        font-size: 0.8rem;
+    }
+    .quote-span{
+        font-size: 1rem;
+    }
 }
 
 /* Tablet Device Styles */
@@ -194,23 +267,37 @@ h4 {
     .follow-us-content a {
         padding-left: 10px;
     }
-    .banner-container{
+
+    .banner-container {
         padding: 10px 40px;
     }
+
     .banner-image img {
         width: 300px;
     }
-    .banner-content-subtitle{
+
+    .banner-content-subtitle {
         font-size: 1.5rem;
     }
-    .banner-content-title{
+
+    .banner-content-title {
         font-size: 2.9rem;
     }
-    .banner-container-description{
-        font-size: 0.7rem;
+
+    .banner-container-description {
+        font-size: 0.8rem;
     }
-    .btn-primary, .btn-secondary{
+
+    .btn-primary,
+    .btn-secondary {
         padding: 10px 20px;
         font-size: 0.6rem;
+    }
+    .gamer-container{
+        flex-direction: column;
+        padding: 10px 40px;
+    }
+    .gamer-content {
+        text-align: center;
     }
 }
