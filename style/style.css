@@ -214,7 +214,55 @@ h4 {
 
 .funny-video-gallery img {
     max-width: 250px;
+    cursor: pointer;
 }
+
+/* .gallery-hover:hover{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transform: filter 0.5s ease-in-out;
+} */
+.icon {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .video:hover .overlay{
+    opacity: 1;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    width: 95%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+  .video {
+    position: relative;
+  }
+  .video-button-text{
+    color: #ff42a5; 
+    margin: 20px 0; 
+    z-index: 100;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 /* Play Instantly Section Styles */
 .play-instantly-flex {
@@ -500,6 +548,10 @@ h4 {
         grid-template-columns: repeat(3, 1fr);
         margin: 20px 120px;
     }
+    .overlay {
+        height: 86%;
+        width: 100%;
+      }
 }
 
 /* Tablet Device Styles */
@@ -579,4 +631,8 @@ h4 {
     .footer-page-name, .policy-page-name, .copyright{
         font-size: .7rem;
     }
+    .overlay {
+        height: 86%;
+        width: 100%;
+      }
 }
