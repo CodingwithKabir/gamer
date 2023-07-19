@@ -294,6 +294,26 @@ h4 {
     font-weight: 600;
 }
 
+/* Footer section Style */
+.footer-container{
+    background-color:#0B0223;
+    color: white;
+    padding: 80px 60px;
+    text-align: center;
+}
+.footer-logo, .footer-page-flex, .footer-icon, .footer-policy-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    gap: 10px;
+}
+.footer-logo img {
+    width: 64px;
+    height: 30px;
+}
+
 /* Responsive Media Query */
 /* Mobile Device Styles */
 @media screen and (max-width: 576px) {
