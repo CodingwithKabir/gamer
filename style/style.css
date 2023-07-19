@@ -478,6 +478,28 @@ h4 {
         padding: calc(5px - 1.5px);
         padding-right: calc(10px - 1.5px);
     }
+    .footer-container{
+        padding: 60px 10px;
+    }
+    .footer-page-name, .policy-page-name, .copyright{
+        font-size: .7rem;
+    }
+    .footer-page-flex, .footer-policy-page{
+        gap: 0px;
+    }
+    .footer-page-flex{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-policy-page{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px 120px;
+    }
 }
 
 /* Tablet Device Styles */
@@ -553,5 +575,8 @@ h4 {
     }
     .button-container{
         padding: 50px 10px;
+    }
+    .footer-page-name, .policy-page-name, .copyright{
+        font-size: .7rem;
     }
 }
