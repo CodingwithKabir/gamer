@@ -305,13 +305,35 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 .footer-logo{
     gap: 10px;
 }
+.footer-page-flex, .footer-policy-page{
+    gap: 40px;
+}
+.footer-icon{
+    gap: 30px;
+}
+.fa-twitter, .fa-facebook, .fa-youtube, .fa-linkedin, .fa-instagram, .fa-apple{
+    cursor: pointer;
+}
 .footer-logo img {
     width: 64px;
     height: 30px;
+}
+.footer-page-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.policy-page-name, .copyright{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.60);
+}
+.policy-page-name, .footer-page-name{
+    cursor: pointer;
 }
 
 /* Responsive Media Query */
